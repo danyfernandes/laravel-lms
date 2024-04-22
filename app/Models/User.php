@@ -50,4 +50,9 @@ class User extends Authenticatable
     {
         return $this->belongsToMany(Course::class)->withPivot('percent')->withTimestamps();
     }
+
+    public function lessons() : BelongsToMany
+    {
+        return $this->belongsToMany(Lesson::class)->withPivot('completed')->withTimestamps();
+    }
 }

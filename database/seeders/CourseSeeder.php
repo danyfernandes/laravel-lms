@@ -17,7 +17,7 @@ class CourseSeeder extends Seeder
 
         \App\Models\Course::factory()->create([
             'title' => 'Adventure Photography: Capturing Wonders Of Nature',
-            'description' => '<div class="p-6 bg-white shadow-md rounded-lg">
+            'description' => '<div class="p-6">
             <h2 class="text-2xl font-bold mb-4">Adventure Photography: Capturing Wonders Of Nature</h2>
             <p class="text-gray-700 mb-4">Immerse yourself in the captivating world of Adventure Photography, where every click of the shutter brings you closer to the heart of nature\'s majesty. In this exhilarating course, you will learn the art and science of capturing breathtaking landscapes, wildlife, and outdoor adventures through the lens of your camera.</p>
             <p class="text-gray-700 mb-4">From serene sunsets to rugged mountain peaks, you will discover the secrets to composing compelling shots that tell stories and evoke emotions. Led by seasoned wilderness photographers, you will venture into the great outdoors, honing your skills amidst stunning vistas and diverse ecosystems.</p>
