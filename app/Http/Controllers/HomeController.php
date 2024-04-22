@@ -9,7 +9,7 @@ class HomeController extends Controller
     public function __invoke()
     {
         return view('welcome', [
-            'courses' => Course::where('status', 'enabled')->latest()->limit(4)->get(),
+            'courses' => Course::where('status', 'enabled')->latest()->limit(10)->get(),
         ]);
     }
 }

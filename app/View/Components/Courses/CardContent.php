@@ -6,7 +6,7 @@ use Closure;
 use Illuminate\Contracts\View\View;
 use Illuminate\View\Component;
 
-class CardComponent extends Component
+class CardContent extends Component
 {
     public $course;
 
@@ -23,6 +23,6 @@ class CardComponent extends Component
      */
     public function render(): View|Closure|string
     {
-        return view('components.courses.card-component');
+        return view('components.courses.card-content');
     }
 }
