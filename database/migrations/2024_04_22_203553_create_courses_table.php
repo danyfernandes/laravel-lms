@@ -24,7 +24,6 @@ return new class extends Migration
             $table->string('subtitles');
             $table->string('access')->default('Lifetime');
             $table->unsignedBigInteger('duration')->default(1);
-            $table->string('payment_link')->nullable();
             $table->timestamps();
         });
     }
