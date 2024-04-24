@@ -1,4 +1,4 @@
-<x-static-layout>
+<x-layout>
     <div>
         <x-courses.course-overview :course=$course :lessons=$lessons>
             @if (!is_null($course->payment_link))
@@ -12,4 +12,4 @@
             @endif
         </x-courses.course-overview>
     </div>
-</x-static-layout>
+</x-layout>

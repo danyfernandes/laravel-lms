@@ -1,4 +1,4 @@
-<x-static-layout>
+<x-layout>
     <div>
         <div class="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
             <h2 class="sr-only">Courses</h2>
@@ -9,4 +9,4 @@
                 @endforeach
             </div>
         </div>
-</x-static-layout>
+</x-layout>

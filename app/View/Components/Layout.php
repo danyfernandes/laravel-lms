@@ -6,7 +6,7 @@ use Closure;
 use Illuminate\Contracts\View\View;
 use Illuminate\View\Component;
 
-class StaticLayout extends Component
+class Layout extends Component
 {
     /**
      * Create a new component instance.
@@ -21,6 +21,6 @@ class StaticLayout extends Component
      */
     public function render(): View|Closure|string
     {
-        return view('layouts.static');
+        return view('layouts.layout');
     }
 }
