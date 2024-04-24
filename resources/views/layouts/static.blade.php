@@ -50,7 +50,7 @@
                                         {{ __('Admin') }}
                                     </a>
                                 @else
-                                    <a href="{{ url('/dashboard') }}"
+                                    <a href="{{ route('student.dashboard') }}"
                                         class="rounded-md px-3 py-2 text-black ring-1 ring-transparent transition hover:text-black/70 focus:outline-none focus-visible:ring-[#FF2D20]">
                                         {{ __('Dashboard') }}
                                     </a>

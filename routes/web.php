@@ -13,10 +13,6 @@ Route::get('/', HomeController::class)->name('home');
 Route::get('/courses', [CourseController::class, 'index'])->name('courses.index');
 Route::get('/courses/{course}', [CourseController::class, 'show'])->name('courses.show');
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth', 'verified'])->name('dashboard');
-
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
@@ -25,3 +21,4 @@ Route::middleware('auth')->group(function () {
 
 require __DIR__ . '/admin.php';
 require __DIR__.'/auth.php';
+require __DIR__.'/student.php';
