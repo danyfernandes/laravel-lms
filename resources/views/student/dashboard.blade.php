@@ -1,13 +1,13 @@
 <x-student.layout>
     <x-slot name="header">
-        <div class="flex space-x-4">
+        <div class="flex justify-between items-center">
             <h2 class="font-semibold text-xl text-gray-800 leading-tight">
                 {{ __('Dashboard') }}
             </h2>
             @if (auth()->user()->is_admin)
                 <a href="{{ route('admin.dashboard') }}"
-                    class="bg-primary hover:bg-secondary px-4 py-2 ont-semibold text-xs text-white uppercase rounded-lg">
-                    {{ __('Go to admin panel') }}
+                    class="bg-primary hover:bg-secondary px-4 py-2 font-semibold text-xs text-white uppercase rounded-md">
+                    {{ __('Go to admin dashboard') }}
                 </a>
             @endif
         </div>
