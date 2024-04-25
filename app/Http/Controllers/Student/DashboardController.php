@@ -28,7 +28,7 @@ class DashboardController extends Controller
       array_push($data['courses'], $value);
       $percent = (int) $user->courses()->where('course_id', $value->id)->first()->pivot->percent;
       $lessons_array = [];
-      foreach ($value->lesson()->get() as $lesson) {
+      foreach ($value->lessons()->get() as $lesson) {
         array_push($lessons_array, $lesson);
       }
       $data['courses'][$key]['lessons'] = $lessons_array;

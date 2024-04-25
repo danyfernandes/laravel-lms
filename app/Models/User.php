@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
+use Illuminate\Support\Facades\Cache;
 
 class User extends Authenticatable
 {
@@ -46,13 +47,18 @@ class User extends Authenticatable
         ];
     }
 
-    public function courses() : BelongsToMany
+    public function courses(): BelongsToMany
     {
         return $this->belongsToMany(Course::class)->withPivot('percent')->withTimestamps();
     }
 
-    public function lessons() : BelongsToMany
+    public function lessons(): BelongsToMany
     {
         return $this->belongsToMany(Lesson::class)->withPivot('completed')->withTimestamps();
+    }
+
+    public function isOnline(): bool
+    {
+        return Cache::has('user-is-online-' . $this->id);
     }
 }
