@@ -70,7 +70,7 @@
                                     <div class="flex justify-center items-center">
                                         @if ($course['percent'] !== 100)
                                             {{-- SEE OVERVIEW --}}
-                                            <a href="#"
+                                            <a href="{{ route('student.courses.show', $course->slug) }}"
                                                 class="text-sm font-semibold w-full text-center py-6 border-r hover:bg-gray-100 hover:text-primary stroke-black hover:fill-primary hover:stroke-primary">
                                                 <svg viewBox="0 0 24 24" class="w-6 mx-auto mb-2" fill="none"
                                                     xmlns="http://www.w3.org/2000/svg">
