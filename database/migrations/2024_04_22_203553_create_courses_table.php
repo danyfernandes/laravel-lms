@@ -24,7 +24,7 @@ return new class extends Migration
             $table->string('audio');
             $table->string('subtitles');
             $table->string('access')->default('Lifetime');
-            $table->unsignedBigInteger('duration')->default(1);
+            $table->unsignedBigInteger('duration')->default(0);
             $table->timestamps();
         });
     }
