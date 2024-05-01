@@ -32,7 +32,8 @@
                             <div class="shadow-lg shadow-slate-500 overflow-hidden hover:shadow-slate-900">
                                 @if (count($course->lessons) > 0)
                                     <div class="hover:bg-gray-100 hover:text-primary">
-                                        <a href="#" class="group">
+                                        <a href="{{ route('student.courses.lessons.show', [$course->slug, $course->lessons[0]->id]) }}"
+                                            class="group">
                                             <div
                                                 class="relative aspect-h-9 aspect-w-16 w-full overflow-hidden bg-gray-200 xl:aspect-h-9 xl:aspect-w-16">
                                                 <img src="{{ asset($course->image_path) }}"
@@ -46,7 +47,7 @@
                                                     <svg class="transform -rotate-90 w-12 h-12">
                                                         <circle cx="24" cy="24" r="20"
                                                             stroke="currentColor" stroke-width="4" fill="transparent"
-                                                            class="text-gray-700" />
+                                                            class="text-gray-400" />
 
                                                         <circle cx="24" cy="24" r="20"
                                                             stroke="currentColor" stroke-width="4" fill="transparent"
@@ -89,7 +90,7 @@
                                             </a>
 
                                             {{-- RESUME COURSE --}}
-                                            <a href="#"
+                                            <a href="{{ route('student.courses.lessons.show', [$course->slug, $course->lessons[0]->id]) }}"
                                                 class="text-sm font-semibold w-full text-center py-6 hover:bg-gray-100 hover:text-primary hover:fill-primary">
                                                 <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
                                                     xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 210 210"
@@ -112,7 +113,7 @@
                                             </a>
 
                                             {{-- REPLAY COURSE --}}
-                                            <a href="#"
+                                            <a href="{{ route('student.courses.lessons.show', [$course->slug, $course->lessons[0]->id]) }}"
                                                 class="text-sm font-semibold w-full text-center py-6 hover:bg-gray-100 hover:text-primary stroke-black hover:fill-primary hover:stroke-primary">
                                                 <svg viewBox="0 0 24 24" fill="none"
                                                     xmlns="http://www.w3.org/2000/svg" class="w-6 mx-auto mb-2">
