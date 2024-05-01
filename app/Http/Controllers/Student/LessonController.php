@@ -82,11 +82,9 @@ class LessonController extends Controller
 
     if ($action[0] === 'complete_and_continue' && $percentCourseCompleted === 100) {
       // Check if the user has already written a review
-      // TODO 
-      //$review = Review::where('course_id', $course->id)->where('user_id', Auth::user()->id)->first();
+      $review = Review::where('course_id', $course->id)->where('user_id', Auth::user()->id)->first();
 
-      //return is_null($review);
-      return true;
+      return is_null($review);
     }
 
     return false;

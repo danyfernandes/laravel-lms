@@ -113,13 +113,6 @@
         cy = ctx.canvas.height / 2;
     };
 
-    removeVideoAutoplay = () => {
-        const videoUrl = document.getElementsByTagName('iframe')[0].src;
-        if (!videoUrl.includes('autoplay=true')) return;
-
-        document.getElementsByTagName('iframe')[0].src = videoUrl.replace('autoplay=true', 'autoplay=false');
-    };
-
     randomRange = (min, max) => Math.random() * (max - min) + min;
 
     initConfetti = () => {
@@ -200,7 +193,6 @@
     //----------Load----------
     window.addEventListener('load', function() {
         if (canvas.offsetParent !== null) {
-            removeVideoAutoplay();
             initConfetti();
             render();
         }

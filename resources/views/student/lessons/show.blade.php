@@ -10,8 +10,9 @@
             @if ($data[0]['lessonCompleted'])
                 <form action="{{ route('student.courses.lessons.show', [$data[0]->slug, $data[0]['lesson']->id]) }}">
                     <x-primary-button
-                        class="bg-white text-gray-950 border-2 border-l-primary border-r-primary border-b-primary border-t-primary hover:bg-primary hover:text-white"
-                        value="mark_incomplete" name="action">{{ __('Mark Incomplete') }}</x-primary-button>
+                        class="bg-white border-2 border-l-primary border-r-primary border-b-primary border-t-primary hover:bg-primary"
+                        value="mark_incomplete" name="action"><span
+                            class="text-gray-950 hover:text-white">{{ __('Mark Incomplete') }}</span></x-primary-button>
                 </form>
                 @php
                     $currentLesson = $data[0]['lesson']->id;
