@@ -40,16 +40,11 @@
                     </x-nav-link>
                 </div>
 
-                {{-- <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
+                <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
                     <x-nav-link :href="route('admin.reviews')" :active="request()->routeIs('admin.reviews')">
                         {{ __('Reviews') }}
                     </x-nav-link>
                 </div>
-                <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
-                    <x-nav-link :href="route('admin.products')" :active="request()->routeIs('admin.products')">
-                        {{ __('Products') }}
-                    </x-nav-link>
-                </div> --}}
             </div>
 
             <!-- Settings Dropdown -->
@@ -133,17 +128,11 @@
             </x-responsive-nav-link>
         </div>
 
-        {{-- <div>
+        <div>
             <x-responsive-nav-link :href="route('admin.reviews')" :active="request()->routeIs('admin.reviews')">
                 <p class="text-center">{{ __('Reviews') }}</p>
             </x-responsive-nav-link>
         </div>
-
-        <div>
-            <x-responsive-nav-link :href="route('admin.products')" :active="request()->routeIs('admin.products')">
-                <p class="text-center">{{ __('Products') }}</p>
-            </x-responsive-nav-link>
-        </div> --}}
 
         <!-- Responsive Settings Options -->
         <div class="pt-4 space-y-2 border-t border-gray-200">

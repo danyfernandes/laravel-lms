@@ -4,6 +4,7 @@ use App\Http\Controllers\Admin\CourseController;
 use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\EnrollmentController;
 use App\Http\Controllers\Admin\LessonController;
+use App\Http\Controllers\Admin\ReviewController;
 use App\Http\Controllers\Admin\UserController;
 use Illuminate\Support\Facades\Route;
 
@@ -40,6 +41,15 @@ Route::middleware(['auth', 'admin'])->group(function () {
     Route::controller(EnrollmentController::class)->group(function () {
       Route::get('/enrollments', 'index')->name('admin.enrollments');
       Route::get('/enrollments/{user_id}', 'show')->name('admin.enrollments.show');
+    });
+
+    Route::controller(ReviewController::class)->group(function () {
+      Route::get('/reviews', 'index')->name('admin.reviews');
+      Route::get('/reviews/create', 'create')->name('admin.reviews.create');
+      Route::post('/reviews', 'store')->name('admin.reviews.store');
+      Route::get('/reviews/{id}/edit', 'edit')->name('admin.reviews.edit');
+      Route::patch('/reviews/{id}', 'update')->name('admin.reviews.update');
+      Route::delete('/reviews/{id}', 'destroy')->name('admin.reviews.destroy');
     });
   });
 });
