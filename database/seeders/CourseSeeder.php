@@ -24,7 +24,7 @@ class CourseSeeder extends Seeder
         </div>
         ',
             'excerpt' => 'Learn Photography from zero',
-            'image_path' => '/images/courses/adventure-photography-capturing-natures-wonders/adventure_photography.jpg',
+            'image_path' => '/images/courses/adventure-photography-capturing-natures-wonders/thumbnail.jpg',
             'slug' => 'adventure-photography-capturing-natures-wonders',
             'price' => '99.99',
             'level' => 'Intermediate',
@@ -44,7 +44,7 @@ class CourseSeeder extends Seeder
                 <p class="text-gray-700 mb-4">By the end of the course, you will not only have a repertoire of delicious recipes but also a deeper appreciation for the culinary diversity that unites us all. Join us on a culinary odyssey and unlock the secrets of global gastronomy!</p>
             </div>',
             'excerpt' => 'Learn culinary creativity from zero',
-            'image_path' => '/images/courses/culinary-creativity-exploring-global-flavors/culinary_creativity.jpg',
+            'image_path' => '/images/courses/culinary-creativity-exploring-global-flavors/thumbnail.jpg',
             'slug' => 'culinary-creativity-exploring-global-flavors',
             'price' => '129.99',
             'level' => 'Advanced',
