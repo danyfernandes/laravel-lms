@@ -23,6 +23,7 @@ class CourseSeeder extends Seeder
             <p class="text-gray-700 mb-4">By the end of the journey, you will not only have a portfolio brimming with stunning images but also a newfound appreciation for the beauty and diversity of the natural world. Embark on your photographic adventure today and let your creativity soar to new heights!</p>
         </div>
         ',
+            'excerpt' => 'Learn Photography from zero',
             'image_path' => '/images/courses/adventure-photography-capturing-natures-wonders/adventure_photography.jpg',
             'slug' => 'adventure-photography-capturing-natures-wonders',
             'price' => '99.99',
@@ -42,6 +43,7 @@ class CourseSeeder extends Seeder
                 <p class="text-gray-700 mb-4">Through a blend of hands-on cooking classes and in-depth cultural insights, you will master the art of crafting authentic dishes that reflect the essence of each region. Whether you are a novice cook or a seasoned kitchen veteran, there is something for everyone in this flavorful adventure.</p>
                 <p class="text-gray-700 mb-4">By the end of the course, you will not only have a repertoire of delicious recipes but also a deeper appreciation for the culinary diversity that unites us all. Join us on a culinary odyssey and unlock the secrets of global gastronomy!</p>
             </div>',
+            'excerpt' => 'Learn culinary creativity from zero',
             'image_path' => '/images/courses/culinary-creativity-exploring-global-flavors/culinary_creativity.jpg',
             'slug' => 'culinary-creativity-exploring-global-flavors',
             'price' => '129.99',
