@@ -21,17 +21,20 @@
                         {{ __('Admin') }}
                     </x-nav-link>
                 </div>
+
                 <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
                     <x-nav-link :href="route('admin.users')" :active="request()->routeIs('admin.users')">
                         {{ __('Users') }}
                     </x-nav-link>
                 </div>
-                {{-- <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
+
+                <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
                     <x-nav-link :href="route('admin.courses')" :active="request()->routeIs('admin.courses')">
                         {{ __('Courses') }}
                     </x-nav-link>
                 </div>
-                <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
+
+                {{-- <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
                     <x-nav-link :href="route('admin.enrollments')" :active="request()->routeIs('admin.enrollments')">
                         {{ __('Enrollments') }}
                     </x-nav-link>
@@ -117,13 +120,13 @@
             </x-responsive-nav-link>
         </div>
 
-        {{-- <div>
+        <div>
             <x-responsive-nav-link :href="route('admin.courses')" :active="request()->routeIs('admin.courses')">
                 <p class="text-center">{{ __('Courses') }}</p>
             </x-responsive-nav-link>
         </div>
 
-        <div>
+        {{-- <div>
             <x-responsive-nav-link :href="route('admin.enrollments')" :active="request()->routeIs('admin.enrollments')">
                 <p class="text-center">{{ __('Enrollments') }}</p>
             </x-responsive-nav-link>
