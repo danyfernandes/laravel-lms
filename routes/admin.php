@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Admin\CourseController;
 use App\Http\Controllers\Admin\DashboardController;
+use App\Http\Controllers\Admin\EnrollmentController;
 use App\Http\Controllers\Admin\LessonController;
 use App\Http\Controllers\Admin\UserController;
 use Illuminate\Support\Facades\Route;
@@ -34,6 +35,11 @@ Route::middleware(['auth', 'admin'])->group(function () {
       Route::get('/courses/{course}/lessons/{lesson}/edit', 'edit')->name('admin.courses.lessons.edit');
       Route::patch('/courses/{course}/lessons/{lesson}', 'update')->name('admin.courses.lessons.update');
       Route::delete('/courses/{course}/lessons/{lesson}', 'destroy')->name('admin.courses.lessons.destroy');
+    });
+
+    Route::controller(EnrollmentController::class)->group(function () {
+      Route::get('/enrollments', 'index')->name('admin.enrollments');
+      Route::get('/enrollments/{user_id}', 'show')->name('admin.enrollments.show');
     });
   });
 });

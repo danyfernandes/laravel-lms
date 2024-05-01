@@ -34,12 +34,13 @@
                     </x-nav-link>
                 </div>
 
-                {{-- <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
+                <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
                     <x-nav-link :href="route('admin.enrollments')" :active="request()->routeIs('admin.enrollments')">
                         {{ __('Enrollments') }}
                     </x-nav-link>
                 </div>
-                <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
+
+                {{-- <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
                     <x-nav-link :href="route('admin.reviews')" :active="request()->routeIs('admin.reviews')">
                         {{ __('Reviews') }}
                     </x-nav-link>
@@ -126,13 +127,13 @@
             </x-responsive-nav-link>
         </div>
 
-        {{-- <div>
+        <div>
             <x-responsive-nav-link :href="route('admin.enrollments')" :active="request()->routeIs('admin.enrollments')">
                 <p class="text-center">{{ __('Enrollments') }}</p>
             </x-responsive-nav-link>
         </div>
 
-        <div>
+        {{-- <div>
             <x-responsive-nav-link :href="route('admin.reviews')" :active="request()->routeIs('admin.reviews')">
                 <p class="text-center">{{ __('Reviews') }}</p>
             </x-responsive-nav-link>

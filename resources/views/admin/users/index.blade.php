@@ -42,7 +42,8 @@
                                 <td class="border px-4 py-2">
                                     {{ $user->is_admin ? 'Admin' : 'Student' }}
                                 </td>
-                                <td class="border px-4 py-2 hover:text-red"><a href="#"
+                                <td class="border px-4 py-2 hover:text-red"><a
+                                        href="{{ route('admin.enrollments.show', $user->id) }}"
                                         class="underline hover:text-primary">{{ count($user->courses()->get()) }}</a>
                                 </td>
                                 @if ($user->isOnline())
