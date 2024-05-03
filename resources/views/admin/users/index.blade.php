@@ -11,7 +11,7 @@
             <div class="flex gap-4 justify-end mb-2">
                 <a href="{{ route('admin.users.create') }}"
                     class="bg-green-500 hover:bg-green-700 px-4 py-2 ont-semibold text-xs text-white uppercase rounded-lg">
-                    {{ __('+') }}</a>
+                    {{ __('Add') }}</a>
             </div>
 
             <div class="overflow-x-auto">

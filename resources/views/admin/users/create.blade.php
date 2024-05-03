@@ -6,7 +6,7 @@
     </x-slot>
 
     <div class="bg-white">
-        <!-- CREATE COURSE -->
+        <!-- CREATE USER -->
         <form method="post" action="{{ route('admin.users.store') }}" enctype="multipart/form-data"
             class="pt-6 space-y-6 container mx-auto mb-8">
             @csrf
